@@ -25,7 +25,7 @@ zinit light zsh-users/zsh-autosuggestions
 zinit light Aloxaf/fzf-tab
 
 #Snippets
-zinit light lukechilds/zsh-nvm
+#zinit light lukechilds/zsh-nvm
 zinit light agkozak/zsh-z
 
 # Load completions
@@ -66,6 +66,12 @@ alias vim='nvim'
 alias c='clear'
 alias ll='ls -la'
 
+
 # Shell integrations
 eval "$(fzf --zsh)"
 #eval "$(zoxide init --cmd cd zsh)"
+export NVM_DIR="$HOME/.nvm"
+  [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+  [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+
+
